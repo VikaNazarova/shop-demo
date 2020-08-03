@@ -1,5 +1,4 @@
 # Demo Shop
-***
 
 This is demo version of a site for a shop, using Strapi.io backend API + Nuxt.js frontend.
 
