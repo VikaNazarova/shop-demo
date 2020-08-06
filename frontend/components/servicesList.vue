@@ -1,12 +1,14 @@
 <template>
-  <div>
+  <div id="servicesList" class="module">
     <h2>Our Services</h2>
-    <div v-for="service in services" :key="service.id">
-        <nuxt-link :to="`/services/${service.url}`">
-            <img :src="'http://localhost:1337'+service.thumbnail['url']" :alt="service.name">
-            <h3>{{service.name}}</h3>
-            <p>{{service.description}}</p>
-        </nuxt-link>
+    <div class="row"> 
+      <div v-for="service in services" :key="service.id">
+          <nuxt-link :to="`/services/${service.url}`">
+              <img :src="'http://localhost:1337'+service.thumbnail['url']" :alt="service.name">
+              <h3>{{service.name}}</h3>
+              <p>{{service.description}}</p>
+          </nuxt-link>
+      </div>
     </div>
   </div>
 </template>
@@ -31,5 +33,11 @@ export default {
 </script>
 
 <style>
-
+  #servicesList .row {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #servicesList .row > div img {
+    height: 10rem;
+  }
 </style>
