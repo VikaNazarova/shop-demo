@@ -14,9 +14,9 @@ yarn run dev
 It will open front on http://localhost:3000/
 
 ## To Do
-- Proper front using Flex
-- Pages: blog and contacts
-- SEO optimization
-- Authentification
-- Emailing
-- Better Webpack configuration
+* [ ] Proper front using Flex
+* [ ] Pages: blog and contacts
+* [ ] SEO optimization
+* [ ] Authentification
+* [ ] Emailing
+* [ ] Better Webpack configuration
